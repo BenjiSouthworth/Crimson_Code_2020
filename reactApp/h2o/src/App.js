@@ -8,21 +8,24 @@ import Button from 'react-bootstrap/Button'
 function App() {
   return (
     <div className="App">
-      <Form name="enterZip">
+      <Form name="enterZip" onSubmit={handleSubmit}>
         <Form.Group controlId="enterZip">
           <Form.Label>Check The Water Quality Near You</Form.Label>
           <Form.Control type="zip" placeholder="Enter Zip Code" />
-
-          <Button type="submit" variant="primary" size="lg" onClick={()=>({})}>
+        </Form.Group>
+        <Button type="submit" variant="primary" size="lg">
           GO
         </Button>
-
-        </Form.Group>
       </Form>
     </div>
-
   );
 }
+
+function handleSubmit(event)
+{
+  event.preventDefault();
+  console.log("hey")
+} 
 
 
 
