@@ -1,6 +1,8 @@
 body {
     margin: 0px;
     overflow: hidden;
+    background-color:   rgb(255,0,0); /* For older browsers */
+    background-color: rgba(255, 0, 0, 0.842); /* For newer browsers */
 }
 canvas {
     padding: 0;
@@ -12,13 +14,16 @@ p {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    background-color:   rgb(255,0,0); /* For older browsers */
+    background-color: rgba(255, 0, 0, 0.842); /* For newer browsers */
+
 }
 #stats {
     position: fixed;
     top: 0;
 }
 #hint {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(219, 20, 20, 1);
     user-select: none;
     position: absolute;
     top: 5px;

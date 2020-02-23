@@ -132,7 +132,7 @@ LiquidfunRenderer.prototype.swap = function () {
     gl.bindTexture(gl.TEXTURE_2D, this.textures.back);
     gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT0,
         gl.TEXTURE_2D, this.textures.back, 0);
-    gl.clearColor(0, 0, 0, 1);
+    gl.clearColor(0, 0, 255, 1);
     gl.clear(gl.COLOR_BUFFER_BIT);
     gl.bindTexture(gl.TEXTURE_2D, this.textures.front);
 };
@@ -253,7 +253,7 @@ LiquidfunRenderer.prototype.render = function (sprite) {
         sprite.threshold_shader.uniforms.base = 0;
         sprite.threshold_shader.uniforms.scale = this.texScale();
         sprite.threshold_shader.uniforms.threshold = this.threshold;
-        sprite.threshold_shader.uniforms.color = new Float32Array([1.0, 1.0, 1.0, 0.5]);
+        sprite.threshold_shader.uniforms.color = new Float32Array([0.55, 1, 1, 1]);
         gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
     }
 
