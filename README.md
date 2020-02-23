@@ -1,8 +1,10 @@
 Event: Crimson Code
+
 Date: 2/23/2020
 
 Group: H2Observers
-Members: Darian Stuit, Benjamin Southworth, Ethan Powers, Brian Rathbone
+
+Members: Benjamin Southworth, Darian Stuit, Ethan Powers, Brian Rathbone
 
 Project: H2Observer
 
